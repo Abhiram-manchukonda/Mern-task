@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <style>
+        .blue-text {
+            color: blue;
+        }
+
+        table,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .label {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 98.5%;
+            vertical-align: middle;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .wide-cell {
+            width: 75%;
+        }
+
+        textarea {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 class="blue-text">Registration Form</h1>
+        <table>
+            <tr>
+                <td class="label">First Name</td>
+                <td class="wide-cell"><input type="text" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td class="label">Last Name</td>
+                <td><input type="text" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td class="label">Email</td>
+                <td><input type="text" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td class="label">Password</td>
+                <td><input type="password" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td class="label">Re-enter Password</td>
+                <td><input type="password" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="label">Gender:</td>
+                <td><input type="radio" name="gender" />Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" />Female</td>
+            </tr>
+            <tr>
+                <td class="label">Phone Number:</td>
+                <td><input type="text" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td class="label">Address</td>
+                <td><textarea class="input-field" rows="6"></textarea></td>
+            </tr>
+            <tr>
+                <td class="label">State</td>
+                <td><input type="text" class="input-field" /></td>
+            </tr>
+            <tr>
+                <td class="label">Country</td>
+                <td>
+                    <select>
+                        <option>Choose your country</option>
+                        <option>Australia</option>
+                        <option>Brazil</option>
+                        <option>China</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>Malaysia</option>
+                        <option>New Zealand</option>
+                        <option>Russia</option>
+                        <option>United States</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Languages known</td>
+                <td>
+                    <input type="checkbox" />English <input type="checkbox" />Kannada
+                    <input type="checkbox" />Hindi <input type="checkbox" />Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" checked />
+                    Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="right-align">
+                    Log in to
+                    <a href="https://www.ethnus.com" target="_blank" class="blue-text">Ethnus</a>
+                    website
+                </td>
+            </tr>
+        </table>
+        <br />
+        <input type="submit" value="Register" />
+    </center>
+</body>
+
+</html>
